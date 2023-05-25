@@ -111,6 +111,10 @@ body{
         gap: 90px;
     }
 
+    .navbar-items > div:hover {
+        font-size: 20.7px;
+    }
+
     #navbar-text1{
         font-size: 32px;
     }
@@ -124,6 +128,10 @@ body{
     .navbar-items{
         font-size: 18px;
         gap: 75px;
+    }
+
+    .navbar-items > div:hover {
+        font-size: 20.7px;
     }
 
     #navbar-text1{
@@ -141,6 +149,10 @@ body{
         gap: 65px;
     }
 
+    .navbar-items > div:hover {
+        font-size: 18.4px;
+    }
+
     #navbar-text1{
         font-size: 26px;
     }
@@ -154,6 +166,10 @@ body{
     .navbar-items{
         font-size: 16px;
         gap: 60px;
+    }
+
+    .navbar-items > div:hover {
+        font-size: 18.4px;
     }
 
     #navbar-text1{
