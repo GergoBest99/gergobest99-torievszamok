@@ -5,11 +5,22 @@ body{
     padding: 0;
     margin: 0;
     background-color: #1A1A1A;
-    font-size: min(1.5vmax, 1vmax);
+    font-size: 20px;
     color: #C0FFE9;
     cursor: default;
     user-select: none;
     text-decoration: none;
+}
+
+#navbar-text2-after1250{
+    display: none;
+    position: absolute;
+    right: 25px;
+    color: #FFEEDF;
+    z-index: 1;
+    align-items: center;
+    height: 80px;
+    font-size: 22px;
 }
 
 #navbar-text1{
@@ -19,8 +30,8 @@ body{
     color: #FFEEDF;
     z-index: 1;
     align-items: center;
-    height: max(8vmin, 50px);
-    font-size: min(2.2vmax, 1.7vmax);
+    height: 80px;
+    font-size: 36px;
 }
 
 #navbar-text2{
@@ -30,8 +41,12 @@ body{
     color: #FFEEDF;
     z-index: 1;
     align-items: center;
-    height: max(8vmin, 50px);
-    font-size: min(1.6vmax, 1.1vmax);
+    height: 80px;
+    font-size: 22px;
+}
+
+.selected-text{
+    color: #CCBCB1;
 }
 
 #copyright{
@@ -39,7 +54,7 @@ body{
     left: 20px;
     bottom: 15px;
     color: #FFEEDF;
-    font-size: min(1.3vmax, 0.8vmax);
+    font-size: 14px;
 }
 
 #index-text{
@@ -50,7 +65,7 @@ body{
     height: 100vh;
     width: 100vw;
     color: #FFEEDF;
-    font-size: min(3.5vmax, 2.5vmax);
+    font-size: 50px;
 }
 
 #navbar-background{
@@ -59,7 +74,7 @@ body{
     left: 0px;
     width: 100vw;
     min-height: 50px;
-    height: max(8vmin, 50px);
+    height: 80px;
     background-color: #364B4D;
 }
 
@@ -70,8 +85,8 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    gap: max(12vmin, 10px);
-    height: max(8vmin, 50px);
+    gap: 100px;
+    height: 80px;
 }
 
 .navbar-items > div{
@@ -87,5 +102,71 @@ body{
     background-color: #476466;
     color: #F0FFDF;
     border-radius: 15px;
-    font-size: min(1.65vmax, 1.15vmax);
+    font-size: 23px;
+}
+
+@media (max-width: 1650px) {
+    .navbar-items{
+        font-size: 18px;
+        gap: 90px;
+    }
+
+    #navbar-text1{
+        font-size: 32px;
+    }
+    
+    #navbar-text2{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .navbar-items{
+        font-size: 18px;
+        gap: 75px;
+    }
+
+    #navbar-text1{
+        font-size: 28px;
+    }
+    
+    #navbar-text2{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1350px) {
+    .navbar-items{
+        font-size: 16px;
+        gap: 65px;
+    }
+
+    #navbar-text1{
+        font-size: 26px;
+    }
+    
+    #navbar-text2{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .navbar-items{
+        font-size: 16px;
+        gap: 60px;
+    }
+
+    #navbar-text1{
+        font-size: 26px;
+    }
+    
+    #navbar-text2{
+        font-size: 16px;
+        display: none;
+    }
+
+    #navbar-text2-after1250{
+        display: flex;
+    }
+
 }
