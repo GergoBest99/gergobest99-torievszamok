@@ -77,16 +77,6 @@ body{
     font-size: 14px;
 }
 
-#index-text{
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-    font-size: 50px;
-}
-
 #navbar-background{
     position: absolute;
     top: 0px;
@@ -230,6 +220,7 @@ body{
     #navbar-text2{
         font-size: 18px;
     }
+
 }
 
 @media (max-width: 1350px) {
@@ -259,6 +250,7 @@ body{
     #navbar-text2{
         font-size: 18px;
     }
+
 }
 
 @media (max-width: 1250px) {
@@ -289,4 +281,49 @@ body{
         font-size: 16px;
     }
 
+}
+
+
+
+.egesz{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 100px;
+    padding-bottom: 50px;
+}
+
+.esemenyek{
+    padding: 10px 15px;
+    border: 1px #FFF2B2 solid;
+}
+
+.evszamok{
+    padding: 10px 15px;
+    border: 1px #FFF2B2 solid;
+    border-left: none;
+    border-right: none;
+}
+
+.top{
+    border-top: none;
+}
+
+.bottom{
+    border-bottom: none;
+}
+
+.datumokLista{
+    border: 1px #FFF2B2 solid;
+    border-left: none;
+}
+
+.disable{
+    opacity: 0;
+    transition: 0.4s ease;
+}
+
+.disable:hover{
+    opacity: 1;
 }
