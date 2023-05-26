@@ -396,6 +396,10 @@ body{
         display: none;
     }
 
+    #index-text{
+        display: none;
+    }
+
     #small-website-text{
         display: flex;
         justify-content: center;
