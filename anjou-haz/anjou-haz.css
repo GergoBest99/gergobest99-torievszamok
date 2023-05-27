@@ -175,6 +175,7 @@ body{
 .esemenyek{
     padding: 10px 15px;
     border: 1px #FFF2B2 solid;
+    text-align: center;
 }
 
 .evszamok{
@@ -182,6 +183,7 @@ body{
     border: 1px #FFF2B2 solid;
     border-left: none;
     border-right: none;
+    text-align: center;
 }
 
 .top{
