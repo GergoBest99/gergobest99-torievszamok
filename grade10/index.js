@@ -14,6 +14,14 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+  var navbarItem3 = document.getElementById("navbar-item3");
+
+  navbarItem3.addEventListener("click", function() {
+    window.location.href = "magyarorszag/magyarorszag.html";
+  });
+});
+
 
 document.addEventListener("DOMContentLoaded", function() {
   var grade9 = document.getElementById("grade-9");
