@@ -22,6 +22,14 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+  var navbarItem4 = document.getElementById("navbar-item4");
+
+  navbarItem4.addEventListener("click", function() {
+    window.location.href = "../felvilagosodas/felvilagosodas.html";
+  });
+});
+
 
 
 document.addEventListener("DOMContentLoaded", function() {
