@@ -1,0 +1,474 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #1A1A1A;
+    font-size: 20px;
+    color: #FFEEDF;
+    cursor: default;
+    user-select: none;
+    text-decoration: none;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+  
+::-webkit-scrollbar-track {
+    background-color: #FFEEDF;
+    border-radius: 12px;
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: #42806D;
+    border-radius: 12px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background-color: #295044;
+}
+
+#small-website-text{
+    display: none;
+}
+  
+
+#navbar-text2-after1250{
+    display: none;
+    position: absolute;
+    right: 25px;
+    z-index: 1;
+    align-items: center;
+    height: 80px;
+    font-size: 22px;
+}
+
+#navbar-text1{
+    display: flex;
+    position: absolute;
+    left: 25px;
+    z-index: 1;
+    align-items: center;
+    height: 80px;
+    font-size: 36px;
+}
+
+#navbar-text2{
+    display: flex;
+    position: absolute;
+    right: 25px;
+    z-index: 1;
+    align-items: center;
+    height: 80px;
+    font-size: 22px;
+}
+
+.selected-text{
+    color: #CCBCB1;
+}
+
+#copyright{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    height: 60px;
+    top: 80px;
+    z-index: 1;
+    right: 25px;
+    font-size: 14px;
+}
+
+#navbar-background{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    min-height: 50px;
+    height: 80px;
+    background-color: #364B4D;
+}
+
+#navbar-background-bottom{
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    width: 100vw;
+    min-height: 50px;
+    height: 60px;
+    background-color: #486466;
+}
+
+#grade-selector-text{
+    display: flex;
+    position: absolute;
+    font-size: 24px;
+    align-items: center;
+    height: 60px;
+    left: 25px;
+}
+
+.grades{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    height: 60px;
+    align-items: center;
+    gap: 100px;
+}
+
+.grades > div{
+    box-sizing: border-box;
+    padding: 0;
+    transition: 0.5s ease;
+}
+
+.grades > div:hover {
+    background-color: rgb(54, 75, 77);
+    cursor: pointer;
+    padding: 10px 10px;
+    background-color: #648A8C;
+    color: #F0FFDF;
+    border-radius: 15px;
+    font-size: 23px;
+}
+
+.navbar-items{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 100px;
+    height: 80px;
+}
+
+.navbar-items > div{
+    box-sizing: border-box;
+    padding: 0;
+    transition: 0.5s ease;
+}
+
+.navbar-items > div:hover {
+    background-color: rgb(54, 75, 77);
+    cursor: pointer;
+    padding: 10px 10px;
+    background-color: #476466;
+    color: #F0FFDF;
+    border-radius: 15px;
+    font-size: 23px;
+}
+
+
+
+.egesz{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 100px;
+    padding-bottom: 50px;
+}
+
+.esemenyek{
+    padding: 10px 15px;
+    border: 1px #FFF2B2 solid;
+    text-align: center;
+}
+
+.evszamok{
+    padding: 10px 15px;
+    border: 1px #FFF2B2 solid;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+}
+
+.top{
+    border-top: none;
+}
+
+.bottom{
+    border-bottom: none;
+}
+
+.datumokLista{
+    border: 1px #FFF2B2 solid;
+    border-left: none;
+}
+
+.disable{
+    opacity: 0;
+    transition: 0.4s ease;
+}
+
+.disable:hover{
+    opacity: 1;
+}
+
+
+
+@media (max-width: 1650px) {
+    .navbar-items{
+        font-size: 18px;
+        gap: 90px;
+    }
+
+    .navbar-items > div:hover {
+        font-size: 20.7px;
+    }
+
+    #grade-selector-text{
+        font-size: 22px;
+    }
+
+    .grades{
+        font-size: 18px;
+        gap: 90px;
+    }
+
+    .grades > div:hover{
+        font-size: 20.7px;
+    }
+
+    #navbar-text1{
+        font-size: 32px;
+    }
+    
+    #navbar-text2{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .navbar-items{
+        gap: 75px;
+    }
+
+    #grade-selector-text{
+        font-size: 20px;
+    }
+
+    .grades{
+        font-size: 18px;
+        gap: 75px;
+    }
+
+    #navbar-text1{
+        font-size: 28px;
+    }
+    
+    #navbar-text2{
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 1350px) {
+    .navbar-items{
+        font-size: 16px;
+        gap: 65px;
+    }
+
+    .navbar-items > div:hover {
+        font-size: 18.4px;
+    }
+
+    .grades{
+        font-size: 16px;
+        gap: 65px;
+    }
+
+    .grades > div:hover{
+        font-size: 18.4px;
+    }
+
+
+    #navbar-text1{
+        font-size: 26px;
+    }
+    
+    #navbar-text2{
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 1250px) {
+    .navbar-items{
+        gap: 60px;
+    }
+
+    .grades{
+        gap: 60px;
+    }
+    
+    #navbar-text2{
+        display: none;
+    }
+
+    #navbar-text2-after1250{
+        display: flex;
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 1050px) {
+    #copyright{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .esemenyek{
+        font-size: 16px;
+    }
+
+    .evszamok{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 980px) {
+    .navbar-items{
+        font-size: 14px;
+        gap: 60px;
+    }
+
+    .navbar-items > div:hover {
+        font-size: 16.1px;
+    }
+
+    .grades{
+        font-size: 14px;
+        gap: 60px;
+    }
+
+    .grades > div:hover{
+        font-size: 16.1px;
+    }
+
+    #navbar-text1{
+        font-size: 22px;
+    }
+    
+    #navbar-text2-after1250{
+        font-size: 14px;
+    }
+
+    #grade-selector-text{
+        font-size: 16px;
+    }
+
+    #copyright{
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width: 875px) {
+    .navbar-items{
+        font-size: 12px;
+        gap: 50px;
+    }
+
+    .navbar-items > div:hover {
+        font-size: 13.8px;
+    }
+
+    .grades{
+        font-size: 12px;
+        gap: 50px;
+    }
+
+    .grades > div:hover{
+        font-size: 13.8px;
+    }
+
+    #navbar-text1{
+        font-size: 18px;
+    }
+
+    #navbar-text2-after1250{
+        font-size: 12px;
+    }
+
+    #grade-selector-text{
+        font-size: 14px;
+    }
+
+    #copyright{
+        font-size: 8px;
+    }
+
+    .esemenyek{
+        font-size: 14px;
+    }
+
+    .evszamok{
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 775px) {
+    .navbar-items{
+        display: none;
+    }
+
+    .navbar-items > div:hover {
+        display: none;
+    }
+
+    .grades{
+        display: none;
+    }
+
+    .grades > div:hover{
+        display: none;
+    }
+
+    #navbar-text1{
+        display: none;
+    }
+
+    #navbar-text2-after1250{
+        display: none;
+    }
+
+    #grade-selector-text{
+        display: none;
+    }
+
+    #copyright{
+        display: none;
+    }
+
+    .esemenyek{
+        display: none;
+    }
+
+    .evszamok{
+        display: none;
+    }
+
+    .egesz{
+        display: none;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    #small-website-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 20px;
+        height: 100vh;
+        margin: 0 50px;
+    }
+
+}

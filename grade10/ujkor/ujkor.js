@@ -30,6 +30,14 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+  var navbarItem5 = document.getElementById("navbar-item5");
+
+  navbarItem5.addEventListener("click", function() {
+    window.location.href = "../magyarorszag_2_ipari_forradalom/magyarorszag_2_ipari_forradalom.html";
+  });
+});
+
 
 
 document.addEventListener("DOMContentLoaded", function() {
